@@ -5,4 +5,9 @@ class Patient < ApplicationRecord
   has_many :languages, as: :sglangs, dependent: :destroy
   has_many :frequencies, as: :occurences, dependent: :destroy
 
+  searchable do
+    integer :id
+    text :condition_description
+  end
+   
 end

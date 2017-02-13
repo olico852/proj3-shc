@@ -1,5 +1,5 @@
 module LocationsHelper
-  locationstr = 'Bedok Tampines
+  locationsstr = 'Bedok Tampines
   Woodlands
   JurongWest
   Tampines

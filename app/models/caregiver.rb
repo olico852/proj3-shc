@@ -18,6 +18,15 @@ class Caregiver < ApplicationRecord
 
   has_secure_password
 
+
+  searchable do
+    integer :id
+    text :first_name, boost: 5.0
+    text :last_name, boost: 5.0
+    integer :yearsofexperience
+    text :experiencedescription
+  end
+
   def self.find_and_authenticate(params)
     Caregiver.find_by_email(params[:email]).try(:authenticate, params[:password])
   end
