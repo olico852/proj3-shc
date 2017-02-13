@@ -12,15 +12,19 @@
   <% end %>
 
   <div>
-    <%= f.text_field :first_name %>
+    <%= f.string_field :first_name %>
   </div>
 
   <div>
-    <%= f.text_field :last_name %>
+    <%= f.string_field :last_name %>
   </div>
 
   <div>
-    <%= f.text_field :email %>
+    <%= f.string_field :email %>
+  </div>
+
+  <div>
+    <%= f.integer_field :contact %>
   </div>
 
   <div>
@@ -28,11 +32,11 @@
   </div>
 
   <div>
-    <%= f.password_field :gender %>
+    <%= f.string_field :gender %>
   </div>
 
   <div>
-    <%= f.password_field :certification %>
+    <%= f.string_field :certification %>
   </div>
 
   <div>
@@ -40,7 +44,7 @@
   </div>
 
   <div>
-    <%= f.text_field :photo %>
+    <%= f.string_field :photo %>
   </div>
 
   <div>
