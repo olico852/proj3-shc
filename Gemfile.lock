@@ -43,6 +43,7 @@ GEM
       execjs
     aws_cf_signer (0.1.3)
     bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -66,6 +67,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.17)
+    ffi (1.9.17-x86-mingw32)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     http-cookie (1.0.3)
@@ -96,7 +98,10 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    nokogiri (1.7.0.1-x86-mingw32)
+      mini_portile2 (~> 2.1.0)
     pg (0.19.0)
+    pg (0.19.0-x86-mingw32)
     pr_geohash (1.0.0)
     puma (3.7.0)
     rack (2.0.1)
@@ -130,6 +135,11 @@ GEM
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     rest-client (2.0.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rest-client (2.0.0-x86-mingw32)
+      ffi (~> 1.9)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
@@ -170,11 +180,15 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2016.10)
+      tzinfo (>= 1.0.0)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
+    unf_ext (0.0.7.2-x86-mingw32)
+    wdm (0.1.1)
     web-console (3.4.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -186,9 +200,10 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
+  bcrypt (= 3.1.11)
   bootstrap-sass (~> 3.3.6)
   bootstrap_form
   byebug
@@ -208,6 +223,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  wdm (>= 0.1.0)
   web-console (>= 3.3.0)
 
 BUNDLED WITH
