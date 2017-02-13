@@ -5,6 +5,7 @@ class FammembersController < ApplicationController
   end
 
   def show
+    @transactions = Fammember.Transactions.all
   end
 
   def new
